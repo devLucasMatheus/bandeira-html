@@ -1,0 +1,37 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+	
+	var tela = document.querySelector("canvas");
+	var pincel = tela.getContext("2d");
+
+	pincel.fillStyle = "yellow";
+	pincel.fillRect(0, 0, 600, 400);
+	
+	pincel.fillStyle = "green";
+	pincel.beginPath();
+	pincel.moveTo(300, 160); //centro do triangulo
+	pincel.lineTo(20, 0); //primeira linha
+	pincel.lineTo(580, 0); // segunda linha
+	pincel.fill();
+
+	pincel.beginPath();
+	pincel.moveTo(300, 200);
+	pincel.lineTo(20, 400);
+	pincel.lineTo(580, 400);
+	pincel.fill();
+
+	pincel.fillStyle = "black";
+	pincel.beginPath();
+	pincel.moveTo(280, 180);
+	pincel.lineTo(0, 20);
+	pincel.lineTo(0, 380);
+	pincel.fill();
+
+	pincel.beginPath();
+	pincel.moveTo(320, 180);
+	pincel.lineTo(600, 20);
+	pincel.lineTo(600, 380);
+	pincel.fill();
+
+</script>
